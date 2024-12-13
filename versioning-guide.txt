@@ -1,0 +1,43 @@
+
+=== Semantic Versioning Basics ===
+Semantic Versioning (SemVer) uses the format:
+MAJOR.MINOR.PATCH
+
+- MAJOR: Increases when you make incompatible API changes.
+- MINOR: Increases when you add functionality in a backward-compatible manner.
+- PATCH: Increases when you make backward-compatible bug fixes.
+
+
+=== Adding Beta Labels ===
+For beta versions, you use pre-release identifiers. These follow the main version number and are separated by a hyphen -. Common conventions include:
+- 1.0.0-beta.1
+- 1.0.0-beta.2
+
+The suffix beta indicates the pre-release nature, while the number (e.g., .1, .2) shows the iteration of the beta version.
+
+=== When to Increment Versions ===
+
+- Start of Beta: Transition from a development version (0.x.x) to beta (e.g., 1.0.0-beta.1).
+- New Beta Iterations: Increase the numeric identifier for subsequent updates (e.g., 1.0.0-beta.2, 1.0.0-beta.3).
+- Significant Beta Changes:
+- - For non-breaking updates, increment the PATCH version (e.g., 1.0.1-beta.1).
+- - For new features, increment the MINOR version (e.g., 1.1.0-beta.1).
+- Release Candidate: Move to 1.0.0-rc.1 after the beta phase if the product is nearly stable.
+
+
+=== Transition to Stable ===
+When the beta phase ends:
+- Drop the -beta identifier and publish the stable release, e.g., 1.0.0.
+
+=== Examples of Beta Versioning: ===
+1. Initial Beta Release: 1.0.0-beta.1
+2. Second Beta Update (Bug Fix): 1.0.0-beta.2
+3. New Features in Beta: 1.1.0-beta.1
+4. Release Candidate: 1.1.0-rc.1
+5. Stable Release: 1.1.0
+
+=== Tips for Proper Beta Versioning: ===
+1. Communicate the Status: Make sure the beta versioning clearly signals that the software is not yet production-ready.
+2. Track Iterations: Use sequential numbers to track beta releases (e.g., .1, .2).
+3. Use Build Metadata (Optional): Add build metadata (e.g., 1.0.0-beta.1+build20241213) for internal tracking.
+4. Version Control Tags: Use Git tags to manage and reference beta versions consistently.

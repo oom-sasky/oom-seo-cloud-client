@@ -1,0 +1,91 @@
+.oom-login-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.oom-login-register h2 {
+    font-size: 24px;
+}
+
+.oom-login-register button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--login-register-button-text-color);
+    background-color: var(--login-register-button-background-color);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.oom-login-register button[disabled] {
+    background-color: gray;
+}
+
+.oom-login-register__container {
+    background-color: var(--login-register-container-background-color);
+    padding: 40px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+}
+
+.oom-login-register__row.action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.oom-login-register__row.password {
+    position: relative;
+}
+
+.oom-login-register__row.password svg {
+    fill: #B3B3B3;
+}
+
+.oom-login-register__row.remember-me label {
+    color: #B3B3B3;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 5px;
+}
+
+.oom-login-register__row .oom-field {
+    border: solid 1px #E8E8E8;
+    border-radius: 4px;
+    padding: 12px 30px;
+    width: 100%;
+}
+
+.oom-login-register__row .small-text {
+    font-size: 10px;
+}
+
+.password-visibility-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;  /* Adjust as needed */
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;  /* Change the color as needed */
+    z-index: 10;  /* Ensure the icon is on top of the input */
+}
+
+.password-visibility-icon svg {
+    width: 24px;  /* Adjust the size of the icon */
+    height: 24px; /* Adjust the size of the icon */
+}

@@ -1,0 +1,93 @@
+/* CustomSelect.css */
+.oom-custom-select-container {
+  position: relative;
+  width: 100%;
+  /* max-width: 500px; */
+}
+
+.oom-custom-select-container .oom-custom-select {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #E8E8E8;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  gap: 5px;
+}
+
+.oom-custom-select-container .oom-select-placeholder {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.oom-custom-select-container .selected-item {
+  color: #FFFFFF;
+  background-color: #2C81FF;
+  border-radius: 20px;
+  padding: 6px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.oom-custom-select-container .remove-item {
+  padding-left: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.oom-custom-select-container .oom-select-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: white;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 0 0 4px 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.oom-custom-select-container .oom-search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.oom-custom-select-container .oom-dropdown-option {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.oom-custom-select-container .oom-dropdown-option:hover {
+  background-color: #f0f0f0;
+}
+
+.oom-custom-select-container .selected {
+  background-color: #366FE9;
+  color: #fff;
+}
+
+.oom-custom-select-container .oom-no-options {
+  padding: 8px 12px;
+  color: #888;
+}
+
+.oom-custom-select-selected ul {
+  padding-left: 10px;
+}

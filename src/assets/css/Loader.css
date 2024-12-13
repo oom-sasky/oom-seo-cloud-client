@@ -1,0 +1,150 @@
+/* Loader */
+.ai-loader {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.ai-loader span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    background-color: #007bff;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.ai-loader span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.ai-loader span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.ai-loader span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.oom-form .oom-btn-loader {
+    /* padding: 14px 60px; */
+}
+
+.oom-btn-loader .text {
+    position: relative;
+    text-transform: capitalize;
+}
+
+.oom-btn-loader .text.loading {
+    position: relative;
+    left: -20px;
+}
+
+.oom-btn-loader {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.oom-btn-loader .loader-ellipsis {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ellipsis-loader,
+.ellipsis-loader span {
+    box-sizing: border-box;
+}
+
+.ellipsis-loader {
+    display: inline-block;
+    position: relative;
+    left: -20px;
+    top: 2px;
+    width: 20px;
+    height: 10px;
+}
+
+.ellipsis-loader span {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.ellipsis-loader span:nth-child(1) {
+    animation: ellipsis1-loader 0.6s infinite;
+}
+
+.ellipsis-loader span:nth-child(2) {
+    top: -2px;
+    width: 12px;
+    height: 12px;
+    animation: ellipsis2-loader 0.6s infinite;
+}
+
+.ellipsis-loader span:nth-child(3) {
+    left: 32px;
+    animation: ellipsis2-loader 0.6s infinite;
+}
+
+.ellipsis-loader span:nth-child(4) {
+    left: 56px;
+    animation: ellipsis3-loader 0.6s infinite;
+}
+
+
+@keyframes ellipsis1-loader {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes ellipsis3-loader {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes ellipsis2-loader {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(24px, 0);
+    }
+}

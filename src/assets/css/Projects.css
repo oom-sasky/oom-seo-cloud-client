@@ -1,0 +1,38 @@
+
+.oom-page-results.project-items {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.oom-page-results.project-items::after {
+    content: "";             
+    flex: 1 1 25%; 
+}
+
+.project-items .project-item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #E8E8E8;
+    border-radius: 20px;
+    padding: 30px 20px;
+    flex: 1 1 calc(25% - 20px);
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    text-align: right;
+}
+
+.project-item .item-records {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.project-item .item-records span {
+    font-size: 10px;
+}
+
+.project-item .item-type span {
+    display: block;
+    text-align: left;
+}

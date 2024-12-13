@@ -1,0 +1,49 @@
+.oom-sign-in-form,
+.accounts-properties {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.oom-sign-in-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.accounts-properties-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.accounts-properties-container .accounts,
+.accounts-properties-container .properties {
+    display: flex;
+    flex-direction: column;
+}
+
+.accounts-properties-container .MuiInputLabel-root {
+    position: relative;
+    top: 15px;
+}
+
+.accounts-properties-container .MuiSelect-select {
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 500px;
+}
+
+.accounts-properties-container .MuiInputBase-root {
+    border-radius: 20px;
+}
+
+.accounts-properties-container h3,
+.accounts-properties-container h4 {
+    text-align: center;
+}

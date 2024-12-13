@@ -1,2 +1,9 @@
-# oom-seo-cloud-server
+=== OOm SEO Cloud ===
+License: MIT License
+
+== Description ==
 OOm SEO Cloud is an all-in-one SEO platform offering website audits, keyword research, and AI-powered content generation. It helps businesses optimize their sites, discover valuable keywords, and create SEO-friendly content to improve search rankings and drive organic traffic.
+
+== Changelog ==
+= 1.0.0-beta.1 - 2024-12-13 =
+Initial Beta Release: 1.0.0-beta.1

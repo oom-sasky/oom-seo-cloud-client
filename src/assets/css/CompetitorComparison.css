@@ -1,0 +1,56 @@
+.oom-page-sub-attributes.website {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.oom-field-container.oom-competitor-urls-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.oom-field-container.oom-competitor-urls-container  .oom-competitor-url-item {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.keyword-ideas-analysis .oom-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px #0000001A;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.keyword-ideas-analysis .oom-tab-item.active,
+.keyword-ideas-analysis .oom-tab-item:hover {
+    background: #2C81FF;
+    color: #FFFFFF;
+}
+
+.keyword-ideas-analysis .oom-tab-item {
+    border: none;
+    background: #FFFFFF;
+    padding: 8px 20px;
+    border-radius: 8px;
+    width: 170px;
+    cursor: pointer;
+}
+
+
+.oom-page-results.keyword-ideas-analysis {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.oom-page-results .oom-page-results__details {
+    width: 100%;
+}

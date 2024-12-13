@@ -1,0 +1,9 @@
+.oom-field-container.use-type {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.oom-field-container.use-type input {
+    margin-right: 10px;
+}
